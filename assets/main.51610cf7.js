@@ -1,4 +1,4 @@
-(()=>{var e=class extends HTMLElement{constructor(){super(),this.innerHTML=`
+(()=>{var s=class extends HTMLElement{constructor(){super(),this.innerHTML=`
             <heading id="toolbar" class="toolbar">
                 <span class="title" onclick="navigateToSection('home')">
                     <a href="/">
@@ -21,7 +21,18 @@
                                 </li>
                                   <ul >
                                 <li  class="mobile-list-subitem">
-
+                                    <div class="mobile-subitem">
+                                        <span class="nav-item-no">
+                                            03
+                                        </span>
+                                        <span class="subitem-text">
+                                            <a href="/projects/mutant_flowers"  class="subitem-text">
+                                            Mutant flowers
+                                            </a>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li  class="mobile-list-subitem">
                                     <div class="mobile-subitem">
                                         <span class="nav-item-no">
                                             02
@@ -63,6 +74,18 @@
                                 projects
                             </p>
                             <ul class="dropdown-list">
+<li>
+                                    <div class="dropdown-list-item">
+                                        <span class="nav-item-no">
+                                            03 
+                                        </span>
+                                        <span class="dropdown-text">
+                                            <a href="/projects/mutant_flowers"  class="subitem-text">
+                                            Mutant flowers
+                                            </a>
+                                            </span>
+                                    </div>
+                                </li>
                                 <li>
                                     <div class="dropdown-list-item">
                                         <span class="nav-item-no">
@@ -97,7 +120,7 @@
                     </ul>
                 </nav>
             </heading>
-        `}connectedCallback(){}};function a(){customElements.define("custom-heading",e)}function o(){let i=document.getElementById("navigation-mobile-container"),t=document.querySelector(".navigation-mobile-list");window.showMobileNavigation=()=>{i&&(i.classList.add("show"),setTimeout(()=>{t&&t.classList.add("show")}))},window.hideMobileNavigation=()=>{t&&(t.classList.remove("show"),setTimeout(()=>{i&&i.classList.remove("show")},100))}}function n(){let i=document.getElementById("arrow-up");if(!i)return;let t=document.querySelector("html");window.addEventListener("scroll",()=>{t&&(t.scrollTop>(t.scrollHeight-t.clientHeight)/4?i.classList.add("active"):i.classList.remove("active"))}),i.addEventListener("click",()=>{window.scrollTo(0,0)})}var s=class extends HTMLElement{constructor(){super()}connectedCallback(){this.innerHTML=`
+        `}connectedCallback(){}};function a(){customElements.define("custom-heading",s)}function n(){let i=document.getElementById("navigation-mobile-container"),t=document.querySelector(".navigation-mobile-list");window.showMobileNavigation=()=>{i&&(i.classList.add("show"),setTimeout(()=>{t&&t.classList.add("show")}))},window.hideMobileNavigation=()=>{t&&(t.classList.remove("show"),setTimeout(()=>{i&&i.classList.remove("show")},100))}}function o(){let i=document.getElementById("arrow-up");if(!i)return;let t=document.querySelector("html");window.addEventListener("scroll",()=>{t&&(t.scrollTop>(t.scrollHeight-t.clientHeight)/4?i.classList.add("active"):i.classList.remove("active"))}),i.addEventListener("click",()=>{window.scrollTo(0,0)})}var e=class extends HTMLElement{constructor(){super()}connectedCallback(){this.innerHTML=`
             <svg id="arrow-up" version="1.0" xmlns="http://www.w3.org/2000/svg" width="7vw" height="7.1vw"
                 viewBox="0 0 356.000000 378.000000" preserveAspectRatio="xMidYMid meet">
                 <g transform="translate(0.000000,378.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
@@ -106,4 +129,4 @@
 -100 0 -100 0 -838 -838z" />
                 </g>
             </svg>
-        `}};function l(){customElements.define("arrow-up",s)}a();l();function c(){o(),n()}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",c):c();})();
+        `}};function l(){customElements.define("arrow-up",e)}a();l();function c(){n(),o()}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",c):c();})();
